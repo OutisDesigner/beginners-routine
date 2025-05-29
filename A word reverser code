@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Word Reverser</title>
+        <meta charset= "utf-8">
+        <link rel="stylesheet" href="styl.css">
+        <script>
+           let input = prompt('Enter a word to Reverse: ');
+           function reverseString(str){
+            alert("The word you entered : "+input+
+                  "\nThe reversed text : "+[...str].reverse().join(''));
+           }
+           reverseString(input);
+        </script> 
+    </head>
+    <body>
+        <h1>Word Reverser</h1><br>
+        
+        
+</html>
