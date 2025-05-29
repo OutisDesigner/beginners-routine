@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Isogram recognizer</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="blabla.css">
+    <script>
+        function isIsogram(str) {
+            let lowerStr = str.toLowerCase(); 
+            let letters = new Set();
+
+            for (let char of lowerStr) {
+                if (letters.has(char)) {
+                    alert("It's not an Isogram");
+                    return;
+                }
+                letters.add(char);
+            }
+            alert("It's an Isogram");
+        }
+
+        let input = prompt("Enter a word : ");
+        isIsogram(input);
+    </script>
+</head>
+<body>
+    <h1>Isogram using Javascript</h1><br>
+</body>
+</html>
+</html>
+
